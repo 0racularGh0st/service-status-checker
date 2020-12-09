@@ -1,0 +1,15 @@
+.service-status-header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    box-shadow: var(--elevation3);
+    position: fixed;
+    width: 100vw;
+}
+
+.service-status-heading{
+    margin-block-start: 0 !important;
+    margin-block-end:0 !important;
+    margin-left: 1rem;
+}
