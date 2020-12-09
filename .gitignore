@@ -106,3 +106,7 @@ dist
 # Mac generated files
 
 .DS_Store
+
+# client
+client/node_modules
+client/build

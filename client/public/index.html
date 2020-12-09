@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="./images/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Service Status Checker for Nigel David" />
+    <link rel="apple-touch-icon" href="./images/logo.png" />
+    <link rel="manifest" href="./manifest.json" />
+    <title>Service Status</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!-- <button onclick="subscribe()">Subscribe</button>
+    <div id="sub-data">
+
+    </div> -->
+    <script>
+        if('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./serviceworker.js')
+                    .then((reg) => console.log('Success: ', reg.scope))
+                    .catch((err) => console.log('Failure: ', err));
+            })
+        }
+        // async function subscribe(){
+        //         let sw = await navigator.serviceWorker.ready;
+        //         let push = await sw.pushManager.subscribe({
+        //             userVisibleOnly : true,
+        //             applicationServerKey: ''
+        //         })
+        //         console.log(JSON.stringify(push));
+        //         document.getElementById("sub-data").innerHTML= JSON.stringify(push);
+        //     }
+    </script>
+  </body>
+</html>
