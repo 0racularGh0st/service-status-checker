@@ -4,7 +4,8 @@
   "description": "server for monitoring the status of services ",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
