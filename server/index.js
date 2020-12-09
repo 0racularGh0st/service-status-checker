@@ -10,7 +10,7 @@ const common = require("./utils/common");
 app.disable('x-powered-by');
 app.use(cors());
 
-var job = new CronJob('* * * * *', function() {
+var job = new CronJob('0 9 * * *', function() {
   common.runScheduledCheck();
 });
 job.start();
