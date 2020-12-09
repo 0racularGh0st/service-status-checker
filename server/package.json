@@ -1,0 +1,27 @@
+{
+  "name": "health-checker-server",
+  "version": "1.0.0",
+  "description": "server for monitoring the status of services ",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0racularGh0st/health-checker-server.git"
+  },
+  "author": "0racularGh0st",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/0racularGh0st/health-checker-server/issues"
+  },
+  "homepage": "https://github.com/0racularGh0st/health-checker-server#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "cron": "^1.8.2",
+    "express": "^4.17.1",
+    "request": "^2.88.2",
+    "requestretry": "4.1.2",
+    "web-push": "^3.4.4"
+  }
+}
