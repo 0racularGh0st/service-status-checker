@@ -6,6 +6,7 @@
     box-shadow: var(--elevation3);
     position: fixed;
     width: 100vw;
+    top: 0;
     font-family: 'Merienda', cursive;
 }
 
