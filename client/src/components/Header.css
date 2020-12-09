@@ -6,6 +6,7 @@
     box-shadow: var(--elevation3);
     position: fixed;
     width: 100vw;
+    font-family: 'Merienda', cursive;
 }
 
 .service-status-heading{
