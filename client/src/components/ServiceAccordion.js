@@ -4,6 +4,7 @@ import AccordionSummary from '@material-ui/core/AccordionSummary';
 import AccordionDetails from '@material-ui/core/AccordionDetails';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import CircularProgress from '@material-ui/core/CircularProgress'
 import "./ServiceAccordion.css";
 import {getServiceStatus} from "../api";
 
@@ -12,7 +13,10 @@ const ServiceAccordion = (service) => {
     const getStatus = async(serviceKey) => {
         let {data} = await getServiceStatus(serviceKey);
         console.log("Res->", data);
-        setStatus(data.status);
+        if(data.status === 200)
+        setStatus('Healthy');
+        else 
+        setStatus('Unhealthy');
     }
 
     const [status,setStatus] = useState('checking...');
@@ -30,7 +34,7 @@ const ServiceAccordion = (service) => {
         >
           <div className="service-name-status">
           <Typography >{service.serviceData.name}</Typography>
-          <Typography> Status {status}</Typography>
+          <Typography className="status-checker"> <div style={{"marginRight": "0.75rem"}}>Status</div> {status === "checking..."? <CircularProgress size="1rem"/>: <div className={status==="Healthy"? "status-healthy": "status-unhealthy"}>{status}</div>}</Typography>
           </div>
         </AccordionSummary>
         <AccordionDetails>

@@ -1,6 +1,5 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import "./Content.css";
-import {getServiceStatus} from "../api";
 import config from "../config";
 import Typography from '@material-ui/core/Typography';
 import ServiceAccordion from "./ServiceAccordion";
