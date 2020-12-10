@@ -7,7 +7,7 @@ const Content = () => {
     return(
         <div className="main-content-wrapper">
             <div className="main-content">
-            <Typography variant="h5">My Services</Typography>
+            <Typography variant="h5" style={{"marginBottom":"2rem"}}>My Services</Typography>
             {
                 config.services.map((service,index) => {
                     return (<ServiceAccordion key={index} serviceData={service}/>)

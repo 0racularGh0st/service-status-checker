@@ -1,0 +1,34 @@
+.service-status-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0rem;
+    box-shadow: var(--elevation3);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    font-family: 'Merienda', cursive;
+    background: white;
+    z-index: 999;
+    a{
+        color: black;
+    }
+}
+.logo-app-name{
+    display: flex;
+    margin-left: 0.75rem;
+}
+.service-status-heading{
+    margin-block-start: 0 !important;
+    margin-block-end:0 !important;
+    margin-left: 1rem;
+}
+.github-icon{
+    margin-right: 1rem;
+    transition: all 0.3s ease !important;
+    border-radius: 50%;
+    &:hover{
+        transform: translateY(-3px);
+        box-shadow: var(--elevation3);
+    }
+}
