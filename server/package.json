@@ -2,10 +2,10 @@
   "name": "health-checker-server",
   "version": "1.0.0",
   "description": "server for monitoring the status of services ",
-  "main": "index.js",
+  "main": "status-checker.js",
   "scripts": {
     "test": "test",
-    "start": "node index.js"
+    "start": "node status-checker.js"
   },
   "repository": {
     "type": "git",
