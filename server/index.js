@@ -12,7 +12,7 @@ app.use(cors());
 
 var job = new CronJob('0 9 * * *', function() {
   common.runScheduledCheck();
-});
+},null,true,'Asia/Kolkata');
 job.start();
 
 // push.setVapidDetails(config.mail, config.vapidKeys.publicKey, config.vapidKeys.privateKey);
