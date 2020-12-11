@@ -5,7 +5,9 @@ const Header = () => {
     return (
         <div className="service-status-header">
         <div className="logo-app-name">
-            <img src="../images/logo.png" height="30" width="30" alt="logo" aria-label="logo"/>
+            <div className="logo-container">
+            <img className="logo-icon" src="../images/logo.png" height="30" width="30" alt="logo" aria-label="logo"/>
+            </div>
             <h2 className="service-status-heading">
                 Service Status
             </h2>
