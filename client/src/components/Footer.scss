@@ -1,0 +1,23 @@
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.8rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+    padding: 2rem;
+    background: #eaeaea;
+}
+.footer-detail{
+    color: #6b6969;
+}
+.my-portfolio{
+    text-decoration: none;
+    color: #6b6969;
+    transition: all 0.3s ease;
+    &:hover{
+        color: #2d0365;
+    }
+}
